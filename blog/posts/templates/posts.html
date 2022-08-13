@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Posts</h1>
+{% for i in title %}<li><a href="/posts/thepost/?i={{i.1}}"> {{ i.0 }}</a></li> {% endfor %}
+
+
+{% endblock %}
